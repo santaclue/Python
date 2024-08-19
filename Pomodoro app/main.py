@@ -1,6 +1,6 @@
 from tkinter import *
 
-# ---------------------------- CONSTANTS ------------------------------- #
+
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
@@ -12,7 +12,6 @@ LONG_BREAK_MIN = 20
 reps = 0
 timer =None
 
-# ---------------------------- TIMER RESET ------------------------------- # 
 def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text,text="00:00")
@@ -21,7 +20,6 @@ def reset_timer():
     global reps
     reps = 0
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
     global reps
     reps+=1
@@ -40,7 +38,6 @@ def start_timer():
         timer_lab.config(text="Work")
 
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 
 def count_down(time):
     global timer
@@ -60,7 +57,6 @@ def count_down(time):
         tick.config(text=check)
 
 
-# ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Pomodoro")
 window.config(padx=100,pady=50,bg=YELLOW)
