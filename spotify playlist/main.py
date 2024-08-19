@@ -3,8 +3,8 @@ import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-Client_id="3ade6f70bc294c8697891b201566c2bc"
-Client_Secret="4811c5380fa243a98ee88b93e176cfaa"
+Client_id=#your id
+Client_Secret=# your secret
 
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=Client_id,
@@ -13,7 +13,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=Client_id,
                                                scope="playlist-modify-private",
                                                show_dialog=True,
                                                cache_path="token.txt",
-                                               username="Santa Clue"))
+                                               username=#your username))
 
 
 
